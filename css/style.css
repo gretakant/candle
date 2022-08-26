@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Lora:ital@1&family=Montserrat:wght@100&family=Raleway:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+line-height: 2;
+
+}
+
+.header {
+    height: 95wh;
+    background-image: linear-gradient( to bottom right, white, black) url('../img/tealight-candles-tea-lights-wax.webp');
+     background-position: center; 
+     background-size: cover;
+  
+    
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    color: pink;
+ text-shadow: 0 0 3px pink, rgb(195, 64, 64);
+}
+
+.heading-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.1rem;
+   animation-name: moveinleft;
+   animation-duration: 4s;
+   animation-timing-function: ease-in-out;
+}
+
+@keyframes moveinleft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(50px)
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading-sub {
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 1.3rem;
+   animation-name: moveinright;
+   animation-duration: 4s;
+   animation-timing-function: ease-in-out;
+}
+
+@keyframes moveinright {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(-50px)
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-container{
+   text-align: center;
+    
+}
+
+.btn {
+    border-bottom: 0.2rem solid pink;
+    color: pink;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    text-decoration: none;
+    text-transform: uppercase; 
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: palevioletred;
+    box-shadow: 0 0.5rem 1rem pink;
+}
+
+.main{
+    height: 95wh;
+    margin-top: 0rem;
+    background-color: palevioletred;
+    text-align: center;
+    padding-top: 5rem;
+    clip-path: polygon(51% 21%, 100% 7%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 6%);
+
+}
+
+.main h1 {    
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+ text-shadow: 0 0 3px pink, rgb(195, 64, 64);
+}
+
+.gallery {
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    width: 75%;
+}
+
+.gallery_photo{
+    box-shadow: 0 1.5rem 4rem white;
+    outline-offset: 1rem;
+    position: absolute;
+    width: 500px;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.gallery_photo:hover{
+    outline: 1.8rem solid pink;
+    transform: scale(1.1);
+}
+
+.gallery_photo-1{
+    left: 20%;
+    top: 15%;
+    width: 450px;
+}
+
+.gallery_photo-2{
+    top: 45%;
+
+}
+.gallery_photo-3{
+    left: 35%;
+    top: 25%;
+    width: 600px;
+
+}
+.footer{
+color: palevioletred;
+font-size: 2rem;
+  height: 25wh;
+  text-align: center;
+  padding: 2rem;
+    
+}
+.footer ul li{
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a{
+    color: palevioletred;
+    text-decoration: none;
+}
+
+.footer ul li a:hover{
+    color: rgb(180, 62, 101);
+    transform: scale(1.2);
+}
